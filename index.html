@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things I Do</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Things I've learned</h1>
+<h3>Internet Basics</h3>
+<ol>
+    <li>HTTP Requests</li>
+    <li>IP Address</li>
+    <li>Servers</li>
+</ol>
+<h3>HTML</h3>
+<ul>
+    <li>Stands for Hyper Text Markup Language</li>
+    <li>Lots of tags
+        <ul>
+            <li>Boilplate
+                <ol>
+                    <li>Doctype</li>
+                    <li>HTML</li>
+                    <li>Head
+                        <ol>
+                            <li>Title</li>
+                        </ol>
+                    </li>
+                    <li>Body</li>
+                </ol>
+            </li>
+            <li>Headings</li>
+            <li>Paragraph</li>
+            <li>em</li>
+            <li>strong</li>
+
+        </ul>
+    </li>
+</ul>
+
+<h1>Rusty Steele</h1>
+<h4>Hi, I'm a dog. Woof!</h4>
+<img src="http://i.imgur.com/Zl0A6erm.jpg" alt="Rusty Steele">
+<h4>Some of my favorite places:</h4>
+    <ul>
+        <li>The beach</li>
+        <li>The Dog park</li>
+        <li>The fire hydrant</li>
+    </ul>
+Make sure to follow me on <a href="">Instagram</a>
+
+<br>
+<br>
+<hr>
+<!--LEARNING ABOUT TABLES-->
+<h1>Frist Gen Pokemon Chart</h1>
+<table border="3">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Evolves</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png" alt="Bulbasaur"></td>
+            <td>Bulbasaur</td>
+            <td>Grass/Poison</td>
+            <td><a href="http://pokemon.wikia.com/wiki/Ivysaur " target="_blank">Ivysaur</a></td>
+         </tr>
+         <tr>
+             <td><img src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png" alt="Charmander"></td>
+             <td>Charmander</td>
+             <td>Fire</td>
+             <td><a href="http://pokemon.wikia.com/wiki/Charmeleon">Charmeleon</a></td>
+         </tr>
+         <tr>
+             <td><img src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png" alt="Squirtle"></td>
+             <td>Squirtle</td>
+             <td>Water</td>
+             <td><a href="http://pokemon.wikia.com/wiki/Wartortle">Wartortle</a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<hr>
+
+<!--LEARNING ABOUT FORMS-->
+<h1>Register</h1>
+<form>
+    <div>
+        <label for="first">First Name: </label>
+        <input type="text" name="first" id="first" placeholder="John" required>
+        <label for="last">Last Name: </label>
+        <input type="text" name="last" id="last" placeholder="Samuel" required>
+    </div>
+    <div>
+        <label for="gender">Male</label>
+        <input type="radio" id="gender" name="separate" value="male">
+        <label for="gender">Female</label>
+        <input type="radio" id="gender" name="separate" value="female">
+        <label for="gender">Other</label>
+        <input type="radio" id="gender" name="separate" value="other">
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="your email" required>
+        <label>Password:</label>
+        <input type="password" name="password" pattern=".{5,10}" required title="5 to 10 characters">
+    </div>
+    <div>
+        <label for="month">Birthday:</label>
+        <select name="dates" id="month">
+            <option value="Month ">Month</option>
+            <option value="January">January </option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+        <select name="days" id="">
+            <option value="Day">Day</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        <select name="Year" id="">
+            <option value="Year">Year</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+        </select>
+    </div>
+    <div>
+        <label for="terms">Agree to the terms and conditions</label>
+        <input type="checkbox" id="terms" name="terms">
+    </div>
+    <button type="submit">Submit</button>
+</form>
+<br>
+<br>
+<br>
+<hr>
+
+
+
+<!--Learning About CSS-->
+<h1>Selectors Exercsie</h1>
+
+<p>PARAGRAPH NOT INSIDE A DIV</p>
+<div>
+    <p class="hello">I am a paragraph witha class</p>
+    <p id="special">I am paragraph with an ID</p>
+
+    <h2>I am an awesome</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Tortor at auctor urna nunc id cursus. Integer quis auctor elit sed. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Elementum sagittis vitae et leo. Neque convallis a cras semper auctor neque vitae tempus quam. Mauris ultrices eros in cursus. Donec massa sapien faucibus et molestie ac. Vitae nunc sed velit dignissim sodales ut. Integer quis auctor elit sed vulputate mi sit. Nisi porta lorem mollis aliquam ut. Libero volutpat sed cras ornare arcu dui vivamus arcu. At risus viverra adipiscing at in tellus. In aliquam sem fringilla ut. Nunc mattis enim ut tellus elementum sagittis vitae.</p>
+
+</div>
+
+<div>
+    <h2>Things I need to do</h2>
+    <ul>
+        <li><label for="walk">Walking Dog</label><input type="checkbox" id="walk" name="dogs" Checked></li>
+        <li><label for="feed">Feeding Dog</label><input type="checkbox" id="feed" name="dogs" checked></li>
+        <li><label for="wash">Washing Dog</label><input type="checkbox" id="wash" name="dogs"></li>
+    </ul>
+
+    <h2>I am another awesome</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi ipsum faucibus vitae aliquet nec ullamcorper sit. Egestas egestas fringilla phasellus faucibus. In tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Donec enim diam vulputate ut. Malesuada proin libero nunc consequat interdum varius sit amet. Vel orci porta non pulvinar. Mauris nunc congue nisi vitae suscipit tellus mauris. Quis enim lobortis scelerisque fermentum dui faucibus. Bibendum at varius vel pharetra vel. Nunc sed blandit libero volutpat. Eget mauris pharetra et ultrices neque ornare aenean euismod elementum. Enim diam vulputate ut pharetra. Dolor purus non enim praesent elementum facilisis leo vel. Arcu cursus euismod quis viverra nibh cras pulvinar. Fermentum iaculis eu non diam phasellus vestibulum lorem sed. Mauris cursus mattis molestie a iaculis at. Vel pharetra vel turpis nunc. Non pulvinar neque laoreet suspendisse interdum.</p>
+    <p>I'm the second paragraph inside this div</p>
+
+</div>
+
+<P>PARAGRAPH NOT INSIDE A DIV</P>
+<div>
+    <h2>A less awesome</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <em>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</em>. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Tortor at auctor urna nunc id cursus. Integer quis auctor elit sed. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique. Elementum sagittis vitae et leo. Neque convallis a cras semper auctor neque vitae tempus quam. Mauris ultrices eros in cursus. Donec massa sapien faucibus et molestie ac. Vitae nunc sed velit dignissim sodales ut. Integer quis auctor elit sed vulputate mi sit. Nisi porta lorem mollis aliquam ut. Libero volutpat sed cras ornare arcu dui vivamus arcu. At risus viverra adipiscing at in tellus. In aliquam sem fringilla ut. Nunc mattis enim ut tellus elementum sagittis vitae.</p>
+    <p>One last paragraph here!</p>
+
+    <a href="https://news.ycombinator.com/">I am a link to Hacker News</a>
+    <a href="https://www.devsprout.io/">I am a link to DevSprout</a>
+    <form action="">
+        <input type="text" id="name" name="name">
+        <label for="name">Name</label>
+    </form>
+    <form action="">
+        <input type="password" name="password" id="pass">
+        <label for="pass">Password</label>
+    </form>
+</div>
+<p>PARAGRAPH NOT INSIDE A DIV</p>
+
+
+</body>
+</html>
